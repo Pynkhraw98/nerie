@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ 
+<title>होम | एनईआरआईई एनसीईआरटी</title>
+
+
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="styling/modal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripting/modal.js"></script>
+<script type="text/javascript" src="scripting/modal1.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styling/960response.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="styling/960style.css" media="screen" />
+<link href="styling/pagesstyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="styling/marqstyles.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="other.css" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+<link href="styling/mainmenu.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styling/menustyle.css" />
+  
+ 
+
+<link rel="stylesheet" type="text/css" href="styling/favi/css/component.css" />
+<script type="text/javascript" src="scripting/jquery.dropotron-1.0.js"></script>
+<script type="text/javascript" src="scripting/jquery.slidertron-1.1.js"></script>
+<script src="scripting/js/modernizr.custom.js"></script>
+
+
+<script type="text/javascript" src="styling/slider/js/slideshow.js"></script>
+<link rel="stylesheet" type="text/css" href="styling/slider/css/slideshow.css" />
+
+<script>document.getElementById("defaultOpen").click();</script>
+
+
+<script type="text/javascript" src="scripting/date_time.js"></script>			
+
+<style>
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+</style>
+
+
+
+
+
+<style>
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	
+}
+</style>
+
+
+<style>
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #25383C;
+}
+
+.topnav a {
+
+
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding:5px 20px;
+  text-decoration: none;
+ font-family: 'Lucida Console';
+    font-size: 14px;
+	 text-transform: uppercase;
+}
+
+.active {
+  background-color: #25383C;
+  color: black;
+  
+  
+}
+
+.topnav .icon {
+  display: none;
+  
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+	
+}
+
+.dropdown .dropbtn {
+      font-size: 14px;   
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+	
+}
+
+.dropdown-content {
+
+
+    display: none;
+    position: absolute;
+    background-color: #25383C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	
+}
+
+.dropdown-content a {
+    float: none;
+    color: WHITE;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  border-radius: 5px 0 0 0;
+    border-left: 3px solid #FFA62F;
+	border-right: 3px solid #FFA62F;
+    color: #FFA62F;
+	  background-color: #FFFFFF;
+    background: -moz-linear-gradient(#254117, #1b1b1b);
+    background: -ms-linear-gradient(#254117, #1b1b1b);
+ 
+    background: -webkit-linear-gradient(#254117, #1b1b1b);
+    background: -o-linear-gradient(#254117, #1b1b1b);
+     background: linear-gradient(#254117, #1b1b1b);
+}
+
+.dropdown-content a:hover {
+
+    background-color: #ddd;
+    color: WHITE;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<style>
+a {
+	color:#0C090A;
+	text-decoration:none;
+}
+a:hover {
+	color:green;
+}
+</style>
+
+
+
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	  <script type="text/javascript" src="js/acsty.js"></script>
+	  <script type="text/javascript" src="js/jquery.anythingzoomer.js"></script>
+<div class="center3">
+<div class="search">
+          <form action="https://www.google.com/search" onSubmit="this.target='_blank'" autocomplete="off" id="search_form">
+            <label><font color="white" size="2px"> </font><input placeholder="खोज" type="text" name="q" size="13" maxlength="200"></label>
+            <input type="submit" id="searchform" title="खोज" value="search" />
+            <input type="hidden" value="http://nerie.nic.in/" name="sitesearch" />
+          </form>
+        </div>
+<div class="toplinks" aria-label="Main menu"> 
+			<ul role="menu">
+			<li role="menuitem"><a href="screen-reader-access_h.html">स्क्रीन रीडर का उपयोग</a></li>
+			<li role="menuitem"><a href="#" id="char1" onClick="set()" aria-label="on or off Character Spacing">चरित्र रिक्ति सक्षम करें</a>
+			<a href="#" id="char2" onClick="unset()" style="display:none;">चरित्र रिक्ति को अक्षम करें</a></li>
+			<li role="menuitem"><a href="#main">मुख्य सामग्री पर जाएं</a></li>
+			<li role="menuitem">फ़ॉन्ट आकार: <a href="#" id="incfont"><img src="images/increase_16.png" alt="Increase Font size of the Page" title="Increase Text size" /></a>
+			<a href="#" id="decfont"><img src="images/decrease_16.png" alt="Decrease Text size" title="Decrease Font size of the Page"/></a>
+			<a href="#" id="rst"><img src="images/normal_16.png" alt="Reset to normal font size of the Page" title="Reset to normal text size"/></a></li>
+			<li role="menuitem">कंट्रास्ट : <a href="#" id="more1"><img src="images/white_black.png" alt="White and Black Color Contrast" title="Black text on White background"/></a>
+			<a href="#" id="more2"><img src="images/black_white_16.png" alt="Black and White Color Contrast" title="White text on Black background"/></a>
+			<a href="#" id="more3"><img src="images/standard.png" alt="Default Color Scheme" title="Reset to the default Color Scheme."/></a>
+			</li>
+			</ul>
+			</div>
+			
+	</div>
+<div class="center1">
+<div id="header">
+<div id="header-text">
+		<h1><span><img src="image/home/hindi.png"></span></h1>
+<h4 align="right">
+				
+		<font size="1.5px" color="white"></font><a href="index.html"><button type="button" disabled class="btn btn-info "  data-toggle="modal" data-target="#myModal">हिंदी </button></a>
+		<font size="1.5px" color="white"></font><a href="index_en.html"><button type="button" title="अंग्रेज़ी में सामग्री देखें" class="btn btn-info " data-toggle="modal" data-target="#myModal">English</button></a>
+		<font size="1.5px" color="white"></font><a href="https://pmis.nerie.nic.in" target="_blank"><button type="button" title="कार्यक्रम प्रबंधन सूचना प्रणाली पोर्टल पर लॉगिन करें" class="btn btn-inf" data-toggle="modal" data-target="#myModal"><strong>Login</strong> </button></a>
+		</br>
+	
+	
+
+	<br> <font color="white"><span id="date_time"></span><script type="text/javascript">window.onload = date_time('date_time');</script></font><br>
+		<a href="maps_h.html"><font color="white" size="2px">मार्ग नक्शा</a></font>&nbsp&nbsp
+		<a href="links_h.html"><font color="white" size="2px">त्वरित सम्पक</a></font>&nbsp&nbsp
+		<a href="sitemap_h.html"><font color="white" size="2px">साइटमैप</a></font><br>
+	<br> <font color="white" size="2px">हमें फ़ॉलो करें  </font><a href="https://twitter.com/nerie_ncert" title="ट्विटर" target="_blank"><img src="image/home/t.png"></a>&nbsp
+		<a href="https://www.facebook.com/people/NERIE-Shillong/61562787790381/" title="फेसबुक" target="_blank"><img src="image/home/f.png"></a>&nbsp
+		<a href="https://www.youtube.com/channel/UCWPbJHuEp4nvlC8sFXnlSvA" title="यूट्यूब चैनल" target="_blank"><img src="image/home/y.png"></a><br>
+</h4>
+
+
+</div>
+</div>
+</div>
+
+
+
+ <div id="spacing">
+ <a id="main"></a>
+<div class="center">
+<div class="topnav" id="myTopnav">
+  <a href="index_h.html" class="active"><font color="orange">होम </font></a>
+    <div class="dropdown">
+    <button class="dropbtn">संस्थागत&#9660  
+         </button>
+    <div class="dropdown-content">
+     <a href="introduction_h.html">परिचय</a>
+               <a href="campus_h.html">कैंपस</a>
+                <a href="salescounter_h.html">बिक्री पटल</a>
+				<a href="nestates_h.html">उत्तर पूर्वी राज्य</a>
+				<a href="rti_h.html">सूचना का अधिकार</a>
+				<a href="pgallery_h.html">चित्र प्रदर्शनी</a>
+				<a href="vgallery_h.html">वीडियो गैलरी</a>
+				<a href="construction_h.html">निर्माण</a>
+    </div>
+  </div> 
+  
+    <div class="dropdown">
+    <button class="dropbtn">शासन प्रबंध&#9660
+       </button>
+    <div class="dropdown-content">
+                   <a href="principal_h.html">प्राचार्य</a>
+                  <a href="former_h.html">पूर्व प्राचार्य </a>
+				  <a href="staff_h.html">स्‍टाफ</a>
+    </div>
+  </div> 
+  
+    <div class="dropdown">
+    <button class="dropbtn">शैक्षणिक&#9660
+         </button>
+    <div class="dropdown-content">
+                 <a href="faculty_h.html">संकाय</a>
+                   <a href="departments_h.html">विभाग</a>
+					<a href="research_h.html">अनुसंधान एवं अब्स्त्रक्त  </a>
+					<a href="seminar_h.html">कार्यक्रम एवं गतिविधियाँ</a>
+					<a href="blocklevelstudy_h.html">ब्लॉक स्तर का अध्ययन </a>
+					<a href="rdc_h.html"><font size="2px">क्षेत्रीय वितरण केंद्र</font></a>
+    </div>
+  </div> 
+  
+   <div class="dropdown">
+    <button class="dropbtn">समितियाँ और प्रकोष्ठ&#9660
+        </button>
+    <div class="dropdown-content">
+<a href="mc_h.html">प्रबंधन समिति </a>
+                <a href="iab_h.html">आई.ए.बी समिति</a>
+              <a href="pac_h.html">पी.ए.सी समिति</a>
+				<a href="other_committee_h.html">अन्य समितियाँ</a> 
+					<a href="cell_h.html">प्रकोष्ठ</a>
+    </div>
+  </div> 
+  
+     <div class="dropdown">
+    <button class="dropbtn">सुविधाएं&#9660
+    </button>
+    <div class="dropdown-content">
+<a href="library_h.html">पुस्तकालय</a>
+				<a href="studio_h.html">स्टूडियो</a>
+				<a href="ict_h.html">आई.सी.टी</a>
+					<a href="smartclassroom_h.html">कक्षा एवं सभागार </a>					
+					<a href="hostel_h.html">छात्रावास एवं कैंटीन </a>
+						<a href="dispensary_h.html">औषधालय एवं गेस्ट हाउस </a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">घोषणाएँ&#9660
+      </button>
+    <div class="dropdown-content">
+					<a href="vacancy_h.html">रिक्तियाँ</a>
+            <a href="tenders_h.html">निविदाएं</a>
+                   <a href="news_h.html">समाचार और घटनायें</a>
+             <a href="notice_h.html">सूचना</a>
+    </div>
+  </div> 
+  
+<div class="dropdown">
+    <button class="dropbtn">पाठ्यक्रम&#9660
+        </button>
+    <div class="dropdown-content">
+		<a href="bed_h.html">बी.एड 2 वर्ष</a>
+                    <a href="dgc_h.html">डी.सी.जी.सी</a>
+					<a href="ece_h.html">ई.सी.ई</a>
+				<a href="affiliation_h.html">संबद्धता
+</a>
+    </div>
+  </div> 
+  
+   <a href="downloads_h.html" class="active">डाउनलोड</a>
+	
+ 
+  <a href="javascript:void(0);" style="font-size:11.8px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<body  >
+<div class="center">
+<div id="side2">
+
+	<iframe width="190" height="220" scrolling="yes" source src="directorflash_h.html"  ></iframe></br>
+	<object data="https://www.youtube.com/embed/qihPCWy520c" width="190" height="110"></object>
+
+</div>
+	
+
+<div id="pageslide">
+	<div id="slider_container_3">
+		<div id="SliderName_3" class="SliderName_3">
+		<img src="image/slider/yuva_manan_ii.jpeg" >
+		<img src="image/slider/Hindi Pakhwada 2024_1.png" >
+		<!--<img src="image/slider/Hindi_1.jpg" >
+		<img src="image/slider/Hindi_2.jpg" >
+		<img src="image/slider/yoga.png" >
+		<img src="image/slider/Eday_2024.jpg" >
+		<img src="image/slider/Eday_2_2024.jpg" >
+		<img src="image/slider/Eday_3_2024.jpg" >
+		<img src="image/slider/Eday_4_2024.jpg" >
+		<img src="image/slider/No Tobacco Day.png" >
+					<img src="image/slider/1h.jpg" >
+					<img src="image/slider/11a1.jpg" >
+					<img src="image/slider/222.jpg" >
+					<img src="image/slider/333.jpg" >
+					<img src="image/slider/2h.jpg" >
+					<img src="image/slider/19h.jpg" >
+					<img src="image/slider/3h.jpg" >
+					<img src="image/slider/4h.jpg" >
+					<img src="image/slider/5h.jpg" >
+					<img src="image/slider/6h.png" >
+					<img src="image/slider/7h.png" >
+					<img src="image/slider/8h.png" >
+					<img src="image/slider/9h.png" >
+					<img src="image/slider/10h.jpg" >
+					<img src="image/slider/11h.jpg" >
+					<img src="image/slider/12h.jpg" >
+					<img src="image/slider/13h.jpg" >
+					<img src="image/slider/14h.jpg" >
+					<img src="image/slider/15h.jpg" >
+					<img src="image/slider/16h.jpg" >
+					<img src="image/slider/17h.png" >
+					<img src="image/slider/18h.jpg" >-->
+		 </div>
+				
+	<script type="text/javascript">
+			demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 400};
+			demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 400};
+			demo3Effect3 = {name: 'myEffect33', bottom: true, move: true, duration: 400};
+			demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 400};
+			demo3Effect5 = {name: 'myEffect35', rows: 3, cols: 9, delay: 50, duration: 100, order: 'random', fade: true};
+			demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 400, order: 'random', fade: true, chess: true};
+			effectsDemo3 = [demo3Effect1,demo3Effect2,demo3Effect3,demo3Effect4,demo3Effect5,demo3Effect6,'blinds'];
+    		var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: 550, height: 255, effects: effectsDemo3, display: {autoplay: 5000}});
+	</script>
+	</div>
+</div>
+
+
+<div id="side2slide">
+	<iframe width="195" height="268" scrolling="yes"source src="newsflash_h.html" ></iframe>
+</div>
+		
+		
+<div id="page4">
+	<nav id="menu" class="nav">					
+	<ul>
+		<li>
+			<a href="campus_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/campusicon.png"></i></span>
+			<span><font size="2px">कैंपस</font></span></a>
+		</li>
+						
+		<li>
+			<a href="pgallery_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/pgalleryicon.png"></i></span>
+			<span><font size="2px">चित्र</font></span></a>
+		</li>
+						
+		<li>
+			<a href="vgallery_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/vgalleryicon.png"></i></span>
+			<span><font size="2px">वीडियो</font></span></a>
+		</li>
+						
+		<li>
+			<a href="library_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/libraryicon.png"></i></span>
+			<span><font size="2px">पुस्तकालय</font></span></a>
+		</li>
+						
+		<li>
+			<a href="studio_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/studioicon.png"></i><span>
+			<span><font size="2px">स्टूडियो</font></span></a>
+		</li>
+						
+		<li>
+			<a href="ict_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/icticon.png"></i></span>
+			<span><font size="2px">आईसीटी</font></span></a>
+		</li>
+												
+		<li>
+			<a href="rti_h.html">
+			<span class=""><i aria-hidden="true" ><img src="image/Tabimages/rti.png"></i></span>
+			<span><font size="2px">सूचना का अधिकार</font></span></a>
+		</li>
+	</ul>
+	</nav>			
+</div>
+	
+	
+
+<div class="row">
+
+	<div class="column middle" >
+	
+ <a id="main"></a>
+	</br> <h2 align="middle">परिचय</h2></br>
+	<p> पूर्वोत्तर क्षेत्रीय शिक्षा संस्थान (NERIE) शिलांग शहर से लगभग 20 किलोमीटर दूर उमियम गांव में प्राकृतिक सुंदरता के बीच स्थित है। पूर्वोत्तर क्षेत्रीय शिक्षा संस्थान (NERIE)
+	राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद (NCERT), नई दिल्ली की एक घटक इकाई है। पूर्वोत्तर राज्यों, अर्थात असम, अरुणाचल प्रदेश, मणिपुर, मेघालय, मिजोरम, नागालैंड, सिक्किम
+	और त्रिपुरा की शैक्षिक आवश्यकताओं को पूरा करने के लिए NERIE की स्थापना 1995 में शिलांग में की गई थी। लेकिन यह 22 मार्च, 1996 से कार्यात्मक हो गया क्योंकि इस दिन क्षेत्रीय कार्यालयों
+	से औपचारिक रूप से कार्यभार सौंपा गया और कार्यभार संभाला गया। <br>
+	पूर्वोत्तर क्षेत्रीय शिक्षा संस्थान की स्थापना का इतिहास वर्ष 1982 का है। माधुरी शाह की अध्यक्षता में राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद (एनसीईआरटी) के 'टास्क फोर्स' ने पूर्वोत्तर में एनसीईआरटी के लिए एक 
+	क्षेत्रीय केंद्र स्थापित करने की सिफारिश की थी। हालांकि, वर्ष 1995 में एनसीईआरटी की गुवाहाटी और शिलांग में तत्कालीन क्षेत्रीय इकाइयों को मिलाकर पूर्वोत्तर के लिए एक अलग क्षेत्रीय शिक्षा संस्थान बनाने का विचार सामने 
+	आया था। उस समय परिषद ने शिलांग में पूर्वोत्तर के लिए एनसीईआरटी के क्षेत्रीय शिक्षा संस्थान (आरआईई) की स्थापना के संबंध में एक "ब्लू प्रिंट" तैयार करने के लिए अरुणाचल प्रदेश विश्वविद्यालय के पूर्व कुलपति प्रोफेसर सी.एल. आनंद की 
+	अध्यक्षता में एक सदस्यीय समिति नियुक्त की थी। एनईआरआईई ने लगभग 10 वर्षों तक एक क्षेत्रीय कार्यालय के रूप में कार्य करना जारी रखा और बाद में, वर्ष 2005 में संस्थान मई, 2012 में उमियम स्थित अपने वर्तमान परिसर में स्थानांतरित हो गया।
+
+</p></br>
+
+
+<p><strong>उत्तर भारतीय राज्यों के बारे में</strong></p>
+
+<div class="tab">
+	<button class="tablinks" onclick="openCity(event, 'AP')" id="defaultOpen"><strong>अरुणाचल प्रदेश</strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Assam')"><strong>असम </strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Manipur')"><strong>मणिपुर </strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Mizoram')"><strong>मिजोरम</strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Meghalaya')"><strong>मेघालय</strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Nagaland')"><strong>नागालैण्ड</strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Sikkim')"><strong>सिक्किम </strong></button>
+	<button class="tablinks" onclick="openCity(event, 'Tripura')"><strong>त्रिपुरा</strong></button>
+</div>
+
+
+<div id="AP" class="tabcontent">
+  <h3>अरुणाचल प्रदेश</h3>
+   <p>	भारतीय संघ के उत्तर पूर्व छोर पर जहाँ पर भारत में प्रात: प्रथमत: सूर्य झाँकता है वहाँ पर अरुणाचल प्रदेश है। कुल 83,743 वर्ग किलोमीटर के क्षेत्र में अरुणाचल प्रदेश की सीमा पश्चिम में भूटान, उत्तर में चीन, पूर्व में म्यांमार और दक्षिण में असम से लगती है।
+   मूलरूप से संघ राज्य-क्षेत्र अरुणाचल 1987 में पूर्ण राज्य बना। जैसा कि इसकी भौगोलिक अवस्थिति से दिखाई देता है कि इसका सामरिक महत्व है। अरुणाचल में मंगोल मूल की 26 प्रमुख जनजातियाँ एवं अनेक उप-जनजातियाँ हैं। इसमें बहती कामेंग, सुभनसीरी, सियांग,
+   लोहित और तिराप जैसी नदियों के साथ हरे-भरे सघन जंगल,  गहरी नदी घाटी और सुंदर पठारों के कारण अरुणाचल पर्यटकों के लिए आकर्षक प्रस्ताव है। अरूणाचल जीवजन्तु और पेड़ पौधों की वन्यजीव प्रजातियों से अत्यन्त समृद्ध है। 
+   जानवरों की भिन्न प्रजातियों के साथ पक्षियों की 500 <a href="nestates_ap_h.html" id="defaultOpen" ><font color="red">>>और पढो</a></font>
+  </p></br>
+</div>
+
+<div id="Assam" class="tabcontent">
+  <h3>असम</h3>
+   <p>	असम भारत के उत्तर-पूर्वी भाग का एक अनूठा राज्य है। यह सात उत्तर पूर्वी राज्यों के मध्य में स्थित है। असम लगभग 78,438 वर्ग कि.मी. क्षेत्र में फैला हुआ है। यह उत्तर में भूटान एवं अरूणाचल प्रदेश, दक्षिम में मिजोरम एवं मेघालय, 
+   पूर्व में नागालैण्ड एवं मणिपुर और पश्चिम में त्रिपुरा, बांग्लादेश और पश्चिम बंगाल से जुड़ा है। वर्ष 1972 से पूर्व असम की राजधानी शिलांग थी। परन्तु 1972 में इसकी राजधानी को शिलांग से बदलकर गुवाहाटी के बाहरी क्षेत्र में दिसपुर में स्थापित कर दिया गया। 
+   'रामायण' और 'महाभारत' जैसे महान ग्रंथों में असम का उल्लेख 'प्राग्ज्योतिश' के रूप में हुआ जिसका अर्थ है पूर्वी प्रकाश की धरती। 4थी एवं 5वीं ईसा-पूर्व सदी 'प्राग्य्योतिश'
+   से अधिक लोकप्रिय नाम 'कामरूप' हो गया। 13वीं सदी से पूर्व इस धरती को असम के नाम से नहीं जाना जाता था। 13वीं सदी के आरंभ में अर्थात
+  <a href="nestates_assam_h.html"> <font color="red">>>और पढो</a></font>
+  </p> </br>
+</div>
+
+<div id="Manipur" class="tabcontent">
+  <h3>मणिपुर </h3>
+  <p>उत्तर भारत के हरे-भरे कोने में दूर समुद्र तल से कहीं ऊँचे पठार में बसे चमत्कारिक रूप से सुंदर छोटे संघरिला को मणिपुर कहा जाता है। मणिपुर शब्द का अर्थ है मणियों की 'भूमि'। यह मणियों की भूमि एक अण्डाकार घाटी है जो
+  नीली और हरी पहाड़ियों से घिरी है, इसके खड़े सोपानी पात, धारा प्रवाह नदियाँ, फूलों का गलीचा, मोहक पुष्पपुन्ज और शांत झीलों और इन सभी से प्रेरित होकर यह "पूर्व का स्विजरलैण्ड" कहलाया। मणिपुर 1972 में भारतीय संघ का 20वाँ
+  राज्य बना। यह राज्य 22,327 वर्ग कि.मी. में फैला है और म्यांमार के साथ पश्चिम में अंतरराष्ट्रीय सीमा और दक्षिण में नागालैण्ड, उत्तर में मिज़ोरम और पश्चिम में असम के 
+  साथ सीमा साझा करता है। मणिपुर के लोगों एवं जनजातियों में मैतयी, नागा एवं कुकी - चिनमीजो समूह और अन्य बहुरंगी समुदाय शामिल हैं जो सदियों से संपूर्ण 
+    <a href="nestates_manipur_h.html" ><font color="red">>>और पढो</a></font>
+  </p></br>
+</div>
+
+<div id="Mizoram" class="tabcontent">
+  <h3>मिजोरम</h3>
+ <p>मूलरूप से लुशाइ हिल्स से ज्ञात मिज़ोरम को असम में से बनाया गया और 21 जनवरी, 1972 को संघ राज्य-क्षेत्र घोषित कर दिया गया। बाद में 15 अगस्त, 1986 को इसे राज्य का दर्जा दिया गया और भारत का 23वाँ राज्य बन गया। मिज़ोरम का अर्थ है
+ "मिज़ो की भूमि"। उत्तर पूर्व क्षेत्र के भीतर यह सबसे दक्षिण स्थलरुद्ध राज्य है जो सेवन सिस्टर स्टेट्स के तीन राज्यों नामत: त्रिपुरा, असम और मणिपुर से सीमा साझा करता है। इस राज्य की 722 किलोमीटर की सीमा पड़ोसी देशों बांग्लादेश और म्यांमार से भी 
+ लगती है। मिज़ोरम का क्षेत्रफल लगभग 21,087 वर्ग कि.मी.
+ है। राज्य का लगभग 91% जंगल है। मिज़ोरम भी प्रकृति रूपी पालेम की सुंदर भूमि है। पर्वतमाला से सज्जित यह राज्य समुद्र तल से 900 मीटर की ऊँचाई पर स्थित है। उत्तर से लेकर दक्षिण तक इन पहाड़ियों की अनेक श्रृंखलाएँ फैली हुइ हैं  <a href="nestates_mizoram_h.html" ><font color="red">>>और पढो</a></font>
+</p></br>
+</div>
+
+<div id="Meghalaya" class="tabcontent">
+  <h3>मेघालय</h3>
+  <p>इस सुंदर राज्य का नाम काव्यात्मक है, 'मेघ' का अर्थ है बादल और 'आलय' का अर्थ है घर। अत: मेघालय बादलों का घर है। खासी, जैनतियाओं और गारो का जनजातीय राज्य मूल रूप से असम का भाग था परन्तु 21 जनवरी, 1972 को भारतीय संघ का एक 
+  राज्य घोषित कर दिया गया। ऊँचे हरे दावेदार वृक्ष, लहरदार पहाड़ियाँ, नदियाँ, एवं धाराएँ और सर्प जैसी घुमावदार सड़कें, खड़े झरने और समृद्ध वन तथा आर्किड मेघालय को पर्यटकों के लिए स्वर्ग बनाते हैं। इसके आकर्षण को चार चाँद लगाने के लिए मेघालय के लोग
+  शिक्षित, सभ्य और अतिथ्यसत्कारी हैं। वे 
+  अधिकांश इसाई होते हुए वे अपनी स्थानीय भाषाओं के अतिरिक्त अंग्रेजी और हिंदी में भी भलिभांति बातचीत करते हैं। मेघालय का क्षेत्रफल लगभग 22,430 कि.मी. है जिसमें लम्बाई और चौड़ाई का अनुपात 3:1 का है। यह राज्य दक्षिण में  <a href="nestates_megh_h.html" ><font color="red">>>और पढो</a></font>
+ </p> </br>
+</div>
+
+<div id="Nagaland" class="tabcontent">
+  <h3>नागालैण्ड</h3>
+  <p>पहाड़ी राज्यक्षेत्र की एक पतली पट्टी के रूप में नागालैण्ड के उत्तर और पश्चिम में असम, दक्षिण में मणिपुर और इसके पूर्व में म्यांमार है। मूलरूप से असम के एक जिले नागालैण्ड को 15 दिसम्बर 1963 को भारत का 16वाँ राज्य घोषित किया गया। यह देश का
+  एकमात्र राज्य है जिसकी राज्य की राजभाषा अंग्रेजी है। लगभग 16,579 कि.मी. के क्षेत्र के नागालैण्ड में 2000 फुट से 10000 फुट की ऊँचाई की पहाड़ियाँ हैं। कोहिमा के निकट सारामती 3826 मीटर की ऊँचाई के साथ नागालैण्ड की सबसे ऊँची चोटी है। असम की 
+  अनेक नदियाँ जैसे धनश्री, दोयांग, भोग्दाई, झांजी नागालैण्ड से निकलती हैं। राज्य की वनस्पति एवं जीव-जन्तु 
+  बहुत समृद्ध हैं। इनमें मुख्यत: तिबतो-बर्मा जनजातियों के 16 समूहों का वास है। उनके शाल उनकी एक जनजाति को दूसरी से भिन्न दर्शाते हैं। प्रत्येक जनजाति की अपनी बोली है परन्तु  <a href="nestates_nagaland_h.html" ><font color="red">>>और पढो</a></font>
+ </p></br>
+</div>
+
+<div id="Sikkim" class="tabcontent">
+  <h3>सिक्किम </h3>
+  <p>सिक्किम उत्तरपूर्व भारत का एक राज्य है। इसके उत्तर और उत्तर पूर्व में तिब्बत ऑटोनोमस रीजन ऑफ चाइना, पूर्व में भूटान, पश्चिम में नेपाल और दिभिण में भारत का पश्चिम बंगाल राज्य है। सिक्किम बंग्लादेश के निकट
+  भारत के सिलीगुडी गलियारे के भी समीप स्थित है। सिक्किम भारत के सबसे कम जनसंख्या के साथ दूसरा सबसे छोटा राज्य है। पूर्वी हिमालय का एक भाग सिक्किम अपनी पर्वतचोटियों एवं उपकटिबंधीय मौसम सहित जैवविविधता
+  के साथ ही कंचनजंगा के लिए उल्लेखनीय है जो कि भारत की सर्वोच्च और पृथ्वी की तीसरी सबसे ऊँची चोटी है। सिक्किम की राजधानी गंगटोक सबसे बड़ा शहर है। सिक्किम साम्राज्य की स्थापना नांग्याल वंश द्वारा सिल्क रोड पर 17वीं शताब्दी में की गई थी।
+	इस पर चोग्याल नामक बौद्ध पादरी-राजा का शासन था। वर्ष 1890 में यह ब्रिटिश भारत का <a href="nestates_sikkim_h.html" ><font color="red">>>और पढो</a></font>
+ </p></br> 
+</div>
+
+<div id="Tripura" class="tabcontent">
+  <h3>त्रिपुरा</h3>
+  <p>लगभग 10,500 वर्ग कि.मी. के भौगोलिक क्षेत्र के साथ त्रिपुरा उत्तर, पश्चिम, दक्षिण और दक्षिण पूर्व में बंग्लादेश की अंतरराष्ट्रीय सीमा से जुड़ा है और और पूर्व में असम और मिज़ोरम के साथ इसकी साझा सीमा है। इसके कुछ 
+  क्षेत्रफल का 60% भाग पहाड़ियों एवं जंगल से ढका है। पूर्व में राजसी राज्य त्रिपुरा, मणिक्या के महाराजा राजवंश से शासित था। वर्ष 1949 में यह भारतीय संघ में मिल गया। 21 जनवरी 1972 में इसे राज्य का दर्जा प्राप्त हुआ। इस राज्य में विभिन्न 
+  जनजातियों के समुदायों के साथ बंगाली, मणिपुरी, लुशाई और चकमा समुदाय रहते हैं। त्रिपुरा की सामासिक संस्कृति है। प्रत्येक समुदाय का अपना नृत्य प्रकार है जो देशभर में प्रसिद्ध हैं। हथकरघा एवं हस्तशिल्प त्रिपुरा की विशेषता है। 
+  बांसमूल, बांस से बनी इसकी बेजोड़ और सजावटी वस्तुएँ, वेंत के फर्नीचर और अन्य उत्कृष्ट हस्तशिल्प निश्चित रूप से
+  <a href="nestates_tripura_h.html" ><font color="red">>>और पढो</a></font>
+ </p> </br>
+</div></br></br>
+
+
+
+	<table>
+		<tr> 
+			<td><p align="middle"><strong>&nbsp&nbsp&nbsp निविदाएँ एवं कोटेशन</strong></p><iframe   scrolling="no" frameborder="0" style="width:100%; height:310px; "source src="tendersmarq_h.html" >TENDERS</iframe></td>
+			<td><p align="middle"><strong>&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp रिक्ति</strong></p><iframe  scrolling="no" frameborder="0" style="width:100%; height:310px; "source src="vacancymarq_h.html" ></iframe></td>
+			<td><p align="middle"><strong>&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp सूचना</strong></p><iframe  scrolling="no" frameborder="0" style="width:100%; height:310px; "source src="noticemarq_h.html" ></iframe></td>
+		</tr>
+	</table>
+</div>
+
+
+
+<style>
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+    animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect { // for android
+ 0%{     color: brown;    }
+    49%{    color: blue; }
+    50%{    color: green; }
+    99%{    color:red;  }
+    100%{   color: orange;    }
+}
+
+</style>
+
+
+
+  
+<div class="column right">
+<table width="100%">
+		<tr><th><font size="2px">प्रभारी प्राचार्य</font></th></tr>
+</table>
+   
+	<img src="image/staff/principal1.jpg" alt="Principal"  align="left" width="100%"/>
+		<p align="justify">डॉ. फ्लोरेटे जी डखर ने 1 जुलाई, 2022 को प्रभारी प्राचार्य, एनईआरआईई शिलांग का कार्यभार संभाला।.
+		<a href="fgdkhar.html"><font color="red">>>और पढ़ें</font></a></p>
+	
+</br>
+	
+<a href="pdf/cee2019.pdf" target="_blank"><strong><font color="orange" ><p align="left"><blink><strong>सामान्य प्रवेश परीक्षा (सी.ई.ई) 2019</strong></blink></p></font></strong></a></td>
+<table width="100%">
+	<tr>
+	<th><font size="1px">एनसीईआरटी संविधान की इकाइयाँ</font></th>
+	</tr>
+</table>
+
+<table width="100%">
+	<tr>
+		<td>
+			<a href="http://ncert.nic.in" target="_blank">
+			<div class="picnie"><div class="text">एनआईई-एनसीईआरटी</div></div></a>
+			<font color="red" align="left" size="1px">एनआईई-एनसीईआरटी</font>	
+		</td>
+
+		<td>
+			<a href="https://ciet.nic.in/" target="_blank">
+			<div class="pic2"><div class="text">सीआईईटी</div></div></a>
+			<font color="red" align="left" size="1px">सीआईईटी</font>	
+		</td>
+		</tr>
+</table>
+	
+<table width="100%">	
+		<td><a href="http://rieajmer.raj.nic.in/home/HomePage.aspx" target="_blank">
+			<div class="pic3"><div class="text">RIE-अजमेर</div></div></a>
+			<font color="red" align="left" size="1px">RIE-अजमेर</font>
+		</td>
+
+		<td><a href="http://riebhopal.nic.in/" target="_blank" >
+			<div class="pic5"><div class="text">RIE-भोपाल</div></div></a>
+			<font color="red" align="left" size="1px">RIE-भोपाल</font>
+		</td>
+</table>
+
+<table width="100%">
+	<td>
+		<a href="http://www.riebbs.ac.in/" target="_blank"><div class="pic4">
+		<div class="text">RIE-भुवनेश्वर</div></div></a>
+		<font color="red" align="left" size="1px">RIE-भुवनेश्वर</font>	
+	</td>
+
+
+	<td><a href="http://psscive.ac.in/" target="_blank">
+		<div class="pic6"><div class="text">PSSCIVE</div></div></a>
+		<font color="red" align="left" size="1px">PSSCIVE</font>	
+	</td>
+</tr>
+</table>
+<table width="100%">
+	<tr>
+	<td>
+		<a href="http://www.riemysore.ac.in/" target="_blank"><div class="picmys">
+		<div class="text">RIE मैसूर</div></div></a>
+		<font color="red" align="left" size="1px">RIE मैसूर</font>	
+	</td>
+
+
+</tr>
+</table>
+
+
+</br>
+	<a href="pdf/IT_Usage_Policy.pdf" target="_blank"><strong><font color="green">आईटी उपयोग नीति संस्करण 1.0</font></strong></a></td>
+	</br></br>
+
+
+	
+
+<table ">
+	<tr>
+		<td><a href="https://gem.gov.in/" target="_blank">
+			<div class="picgem"><div class="text">जीईएम</div></div></a>
+		</td>
+
+		<td><a href="https://www.india.gov.in/website-national-repository-open-educational-resources-nroer" target="_blank">
+			<div class="picnroer"><div class="text">NROER</div></div></a>
+		</td>
+	</tr>
+		
+
+</table></br>
+
+<table width="100%">
+	<td><a href="https://swayam.gov.in/" target="_blank">
+		<div class="picsw"><div class="text">स्वयं</div></div></a>
+	</td>
+	
+	<td><a href="https://ncertbooks.ncert.gov.in/login" target="_blank">
+		<div class="pictb"><div class="text">एनसीईआरटी पाठ्य पुस्तकें</div></div></a>
+	</td>
+</table>
+<br>
+<table width="100%">
+	<td><a href="https://nad.gov.in/" target="_blank">
+		<div class="nadtb"><div class="text">राष्ट्रीय शैक्षणिक डिपॉजिटरी</div></div></a>
+	</td>
+	<td><a href="https://ndl.iitkgp.ac.in/" target="_blank">
+		<div class="dig"><div class="text">Corona&nbspOutbreak: Study&nbspfrom&nbspHome</div></div></a>
+	</td>
+	
+</tr>
+</table>
+
+<br>
+<table width="100%">
+	<tr><td><a href="https://apps.apple.com/us/app/first-aid-american-red-cross/id529160691" target="_blank">
+		<div class="fastgps"><div class="text">First Aid for Teachers&nbsp&&nbspStudents </div></div></a>
+	</td>
+	<td><a href="https://apps.apple.com/us/app/first-aid-american-red-cross/id529160691" target="_blank">
+		<div class="fastapp"><div class="text">First Aid for Teachers&nbsp&&nbspStudents </div></div></a>
+	</td>
+	
+	</tr>
+</table>
+
+
+
+
+
+</div>
+
+	</div>
+
+<div class="center2">
+<div class="row">
+<div id="pagecontact1">
+<img src="image/home/1.jpg" width="40%" height="50%" align="middle" ></br>
+<font color ="white" size="3.5px"><p align="left">| एनईआरआईई, एनसीईआरटी द्वारा डिज़ाइन एवं विकसित  | 
+</br>
+| एनआईसी द्वारा समर्थित |</br>
+
+ <a href="terms_h.html"><font color ="white" size="2.5px">| उपयोग की शर्तें |</font></a></br>
+|विजिटर सं.:
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hmxnacdq&nd=6&style=11" border="0" alt="website counter"></a>
+|</p>
+</font>
+
+</div>
+		
+<div id="pagecontact">
+	<font color="white" size="5px"><strong>संपर्क करें</strong></font><br><br>
+	<font color="white" size="3px">
+	<strong align="justify">उत्तर पूर्व क्षेत्रीय शिक्षा संस्थान, एनसीईआरटी <br>उमियाम, राईभोई जिला, मेघालय - 793103
+	     <br><br>
+	&#x260F कार्यालय - 0364-2570009/29/17/82<br>
+	<font color="white" size="2px"> &#x2709 ईमेल :</font><font color="white" size="1.6px">nerie(dot)ncert1(at)gmail(dot)com <font color="orange">or </font>nerie(dot)shillong(at)ncert(dot)nic(dot)in</font></br>
+	&#x1F4E0 फैक्स : 0364-2570062</font><br>
+    
+	<marquee behavior="left"><font color="yellow" size="2px" scrollamount="1">
+किसी भी प्रतिक्रिया / सुझाव / टिप्पणी के मामले में, कृपया <font color="white" size="2px">nerie(dot)ncert1(at)gmail(dot)com <font color="orange">or</font> nerie(dot)shillong(at)ncert(dot)nic(dot)in</font> पर ईमेल भेजें </font></marquee
+	<br>
+</div>
+</div>
+
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+	<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #E5E4E2;
+}
+.tab1 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #5E7D7E;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #BCC6CC;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: 	#F3E5AB;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 7px;
+    border: 2px solid #ccc;
+    border-top: none;
+	font-size: 17px;
+}
+
+.blinking{
+	animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #87C72E;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
+</style>		
+
+
+	
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+     /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 30%;
+    height: auto;
+	 border: 0px solid silver;
+}
+
+.full {
+width: 100%;
+}
+
+.middle {
+  width: 70%;
+  height: auto;
+   border: 1px solid silver;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+
+
+</div>	
+</head>
+</body>
+</html>
